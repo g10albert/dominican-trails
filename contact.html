@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggest a Trail | Dominican Trails</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <script defer src="./scripts/app.js"></script>
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-wrapper">
+      <div class="logo">
+        <img src="./images/favicon.png" alt="Dominican Trails Logo" width="150" height="50">
+      </div>
+      <nav class="main-nav">
+        <button id="menu-toggle" aria-label="Toggle navigation menu" class="menu-button">☰</button>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./trails.html">All Trails</a></li>
+          <li><a href="./contact.html" class="active">Suggest a Trail</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="contact-header">
+      <h1 class="page-title">Share Your Favorite Dominican Trail</h1>
+      <p>Know a hidden gem we missed? Fill out the form below to suggest a new hike for **Dominican Trails**!</p>
+    </section>
+
+    <section class="form-section">
+
+      <form id="trail-submit-form" class="trail-form" method="POST" action="submit-form.html">
+
+        <fieldset>
+          <legend>Your Contact Information</legend>
+
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="name@example.com">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Trail Details (Optional)</legend>
+
+          <div class="form-group">
+            <label for="trailName">Suggested Trail Name:</label>
+            <input type="text" id="trailName" name="trailName">
+          </div>
+
+          <div class="form-group">
+            <label for="trailDifficulty">Difficulty Estimate:</label>
+            <select id="trailDifficulty" name="trailDifficulty">
+              <option value="" disabled selected>Select Difficulty</option>
+              <option value="Easy">Easy</option>
+              <option value="Moderate">Moderate</option>
+              <option value="Hard">Hard</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="trailComments">Why should we feature this trail?</label>
+            <textarea id="trailComments" name="trailComments" rows="5"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn primary-btn submit-btn">Submit Suggestion</button>
+
+      </form>
+
+      <p id="submission-message" class="form-message"></p>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> Dominican Trails</p>
+    <a href="./references.html" class="footer-link">Image & Content References</a>
+    <p id="lastmodified"></p>
+  </footer>
+</body>
+
+</html>

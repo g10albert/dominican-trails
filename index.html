@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominican Trails | Discover Hiking in the DR</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <script defer src="./scripts/app.js"></script>
+
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-wrapper">
+      <div class="logo">
+        <img src="./images/favicon.png" alt="Dominican Trails Logo" width="150" height="50">
+      </div>
+      <nav class="main-nav">
+        <button id="menu-toggle" aria-label="Toggle navigation menu" class="menu-button">☰</button>
+        <ul class="nav-links">
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="./trails.html">All Trails</a></li>
+          <li><a href="./contact.html">Suggest a Trail</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="hero-section">
+      <h1 class="hero-title">Discover the Hidden Gems of the Dominican Republic</h1>
+      <p class="hero-tagline">From the highest peak in the Caribbean to hidden coastal paths, Dominican Trails is
+        your guide to adventure.</p>
+      <a href="./trails.html" class="btn primary-btn">Find Your Next Hike</a>
+    </section>
+
+    <section class="featured-trails">
+      <h2 class="section-title">Featured Trails for This Week</h2>
+      <div class="trail-previews">
+
+        <article class="feature-card">
+          <h3 class="card-title">Pico Duarte (The Summit)</h3>
+          <img src="./images/pico-duarte.jpg" alt="photo of the top part of 'El Pico Duarte'" loading="lazy"
+            class="card-image">
+          <p class="card-description">Challenge yourself with the Caribbean's highest peak.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="card-title">27 Charcos of Damajagua</h3>
+          <img src="./images/damajagua-waterfall.jpg" alt="Natural waterfall slide at Damajagua" loading="lazy"
+            class="card-image">
+          <p class="card-description">An exhilarating adventure of jumping and sliding through waterfalls.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3 class="card-title">El Limón Waterfall</h3>
+          <img src="./images/el-limon.jpg" alt="El Limón waterfall seen from a frontal angle" loading="lazy"
+            class="card-image">
+          <p class="card-description">A beautiful trek through dense tropical forests to a stunning cascade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-newsletter">
+      <h2 class="section-title">Get the Latest Trail Updates!</h2>
+      <p>Sign up for our newsletter to get guides and safety tips straight to your inbox.</p>
+      <a href="./contact.html" class="btn secondary-btn">Subscribe Now</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> Dominican Trails</p>
+    <a href="./references.html" class="footer-link">Image & Content References</a>
+    <p id="lastmodified"></p>
+  </footer>
+
+
+
+</body>
+
+</html>

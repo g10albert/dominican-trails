@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Trails | Dominican Trails</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <script defer src="./scripts/app.js"></script>
+
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-wrapper">
+      <div class="logo">
+        <img src="./images/favicon.png" alt="Dominican Trails Logo" width="150" height="50">
+      </div>
+      <nav class="main-nav">
+        <button id="menu-toggle" aria-label="Toggle navigation menu" class="menu-button">☰</button>
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./trails.html" class="active">All Trails</a></li>
+          <li><a href="./contact.html">Suggest a Trail</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="trails-list-header">
+      <h1 class="page-title">Explore All Dominican Trails</h1>
+      <p>Use the filters below to find the perfect adventure based on location, difficulty, or length.</p>
+    </section>
+
+    <section class="filter-controls">
+      <h2 class="visually-hidden">Filter Trails</h2>
+
+      <label for="difficulty-filter">Filter by Difficulty:</label>
+      <select id="difficulty-filter">
+        <option value="all">All Difficulties</option>
+        <option value="Easy">Easy</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Hard">Hard</option>
+      </select>
+
+      <label for="sort-distance">Sort by Distance:</label>
+      <select id="sort-distance">
+        <option value="none">None</option>
+        <option value="asc">Shortest to Longest</option>
+        <option value="desc">Longest to Shortest</option>
+      </select>
+
+      <button class="btn primary-btn" id="apply-filters">Apply Filters</button>
+    </section>
+
+    <section class="trail-listing-section">
+      <h2 class="visually-hidden">Trail Details</h2>
+      <div class="trail-grid" id="trail-listing">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> Dominican Trails</p>
+    <a href="./references.html" class="footer-link">Image & Content References</a>
+    <p id="lastmodified"></p>
+  </footer>
+
+</body>
+
+</html>
